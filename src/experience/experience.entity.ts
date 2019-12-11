@@ -1,10 +1,8 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity } from 'typeorm';
+import { BaseEntity } from '../shared/base-entity';
 
 @Entity()
-export class Experience {
-  @PrimaryGeneratedColumn()
-  id: number;
-
+export class Experience extends BaseEntity {
   @Column()
   title: string;
 
@@ -25,5 +23,4 @@ export class Experience {
 
   @Column()
   isPublished: boolean;
-
 }
