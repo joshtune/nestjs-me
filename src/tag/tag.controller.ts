@@ -5,7 +5,7 @@ import { Tag } from './tag.entity';
 
 @Crud({
   model: {
-    type: Tag,
+    type: Tag
   },
 })
 @Controller('api/tags')

@@ -4,14 +4,14 @@ import { BaseEntity } from '../shared/base-entity';
 @Entity()
 export class Project extends BaseEntity {
   @Column()
-  title: string;
+  name: string;
 
-  @Column()
+  @Column('longtext')
   description: string;
 
   @Column()
   thumbnailUrl: string;
 
   @Column()
-  url: string;
+  link: string;
 }
