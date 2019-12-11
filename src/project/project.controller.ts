@@ -8,7 +8,7 @@ import { Project } from './project.entity';
     type: Project,
   },
 })
-@Controller('api/project')
+@Controller('api/projects')
 export class ProjectController {
   constructor(public service: ProjectService) {}
 }

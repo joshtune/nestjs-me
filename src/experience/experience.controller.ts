@@ -8,7 +8,7 @@ import { ExperienceService } from './experience.service';
     type: Experience,
   },
 })
-@Controller('api/experience')
+@Controller('api/experiences')
 export class ExperienceController {
   constructor(public service: ExperienceService) {}
 }

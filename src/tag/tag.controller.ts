@@ -8,7 +8,7 @@ import { Tag } from './tag.entity';
     type: Tag,
   },
 })
-@Controller('api/tag')
+@Controller('api/tags')
 export class TagController {
   constructor(public service: TagService) {}
 }

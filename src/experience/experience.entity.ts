@@ -18,8 +18,8 @@ export class Experience extends BaseEntity {
   @Column()
   end: string;
 
-  @Column()
-  descriptions: string;
+  @Column('longtext')
+  description: string;
 
   @Column()
   isPublished: boolean;
